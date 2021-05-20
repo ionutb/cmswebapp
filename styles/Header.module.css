@@ -1,0 +1,14 @@
+.header {
+    text-align: right;
+    margin-right:15px;
+}
+
+
+.langSwitcher {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #999;
+    font-size: 18px;
+    color: rgb(44, 44, 75);
+    background-color: rgba(255, 255, 255, 0.8);
+}

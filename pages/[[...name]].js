@@ -6,7 +6,7 @@ import Nav from "../components/Nav";
 
 
 function Content(props) {
-  debugger;
+
   var content;
   if (props.content) {
     content = props.content[0];

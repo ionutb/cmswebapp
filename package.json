@@ -5,11 +5,24 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "migrate": "node scripts/migrate-db.js"
   },
   "dependencies": {
+    "dotenv": "^9.0.2",
+    "fs": "0.0.1-security",
+    "i18next": "^20.2.4",
+    "i18next-browser-languagedetector": "^6.1.1",
+    "i18next-http-backend": "^1.2.4",
+    "net": "^1.0.2",
     "next": "10.2.0",
+    "next-i18next": "^8.3.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-i18next": "^11.8.15",
+    "serverless-mysql": "^1.5.4"
+  },
+  "devDependencies": {
+    "tls": "0.0.1"
   }
 }
