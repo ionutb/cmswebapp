@@ -5,8 +5,9 @@ const Header = ({ children }) => {
 
   const router = useRouter();
 
+  //redirect to homepage when the language changes
   function changeLanguage(lang) {
-      router.push(router.asPath, null, {locale: lang});
+      router.push('/', null, {locale: lang});
   }
   return (
       <div className={styles.header}>

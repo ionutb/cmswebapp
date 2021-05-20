@@ -3,6 +3,8 @@ import Header from "./Header";
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 
+
+//main layout component
 const Layout = ({ children }) => {
 
 
@@ -19,22 +21,10 @@ const Layout = ({ children }) => {
               <Header/>
               Lang is {lang} <br/>
             </div>
+              {/*page content*/}
               {children}
-            {/*<div className={styles.nav}>*/}
-            {/*  <Nav/>*/}
-            {/*</div>*/}
-            {/*<div className={styles.main}>*/}
-            {/*  */}
-            {/*</div>*/}
         </div>
       </>
   )
 }
-
-//
-// export const getStaticProps = async ({ locale }) => ({
-//   props: {
-//     ...await serverSideTranslations(locale, ['common']),
-//   },
-// })
 export default Layout
