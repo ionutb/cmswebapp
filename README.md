@@ -2,6 +2,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+First create a config file based on the example below
+```bash
+cp .env.local.example .env.local
+```
+
 First, run the migration script:
 
 ```bash
