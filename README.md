@@ -7,7 +7,7 @@ First create a config file based on the example below
 cp .env.local.example .env.local
 ```
 
-First, run the migration script:
+Then, run the migration script:
 
 ```bash
 npm run migrate
