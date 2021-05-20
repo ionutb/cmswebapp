@@ -32,7 +32,7 @@ async function migrate() {
   try {
     await query(`
     
-CREATE TABLE IF NOT EXISTS \`cms5\` (
+CREATE TABLE IF NOT EXISTS \`cms\` (
   \`id\` int(11) NOT NULL AUTO_INCREMENT,
   \`lang\` enum('en','fr','ro','') NOT NULL,
   \`url\` varchar(255) NOT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS \`cms5\` (
     await query(`
     
 
-INSERT INTO \`cms5\` (\`id\`, \`lang\`, \`url\`, \`title\`, \`content\`, \`is_main\`, \`created_at\`) VALUES
+INSERT INTO \`cms\` (\`id\`, \`lang\`, \`url\`, \`title\`, \`content\`, \`is_main\`, \`created_at\`) VALUES
 (1, 'en', 'lunar-eclipse', 'Lunar Eclipse', 'This will be 2021\\'s only total lunar eclipse. The phenomenon occurs when the moon and sun are on opposite sides of the Earth, and the moon enters Earth\\'s shadow. During that time, the moon doesn\\'t get any direct sunlight, though it\\'s still exposed to light filtered through Earth\\'s atmosphere. When that light hits the moon\\'s surface, it\\'s reflected back with a red glow because air molecules in the atmosphere tend to scatter blue light.', 1, '2021-05-19 13:24:24'),
 (2, 'fr', 'eclipse-lunaire', 'Éclipse lunaire', 'Ce sera la seule éclipse lunaire totale de 2021. Le phénomène se produit lorsque la lune et le soleil sont sur des côtés opposés de la Terre et que la lune pénètre dans l\\'ombre de la Terre. Pendant ce temps, la lune ne reçoit pas de lumière directe du soleil, bien qu\\'elle soit toujours exposée à la lumière filtrée à travers l\\'atmosphère terrestre. Lorsque cette lumière atteint la surface de la lune, elle est réfléchie avec une lueur rouge parce que les molécules d\\'air dans l\\'atmosphère ont tendance à diffuser la lumière bleue.', 1, '2021-05-19 13:24:24'),
 (3, 'ro', 'eclipsa-de-lună', 'Eclipsa de lună', 'Aceasta va fi singura eclipsă lunară totală din 2021. Fenomenul apare atunci când luna și soarele se află pe laturile opuse ale Pământului, iar luna intră în umbra Pământului. În acest timp, luna nu primește nicio lumină directă a soarelui, deși este încă expusă la lumina filtrată prin atmosfera Pământului. Când acea lumină lovește suprafața lunii, aceasta se reflectă înapoi cu o strălucire roșie, deoarece moleculele de aer din atmosferă tind să împrăștie lumina albastră.', 1, '2021-05-19 13:24:24'),
